@@ -5,7 +5,7 @@ MPI + OpenMP sparse matrix libraries.
 
 Nullarbor.f90 and Spinifex.f90 contain modules designed for working with [compressed sparse row matrices](https://en.wikipedia.org/wiki/Sparse_matrix#Compressed_sparse_row_(CSR,_CRS_or_Yale_format)) in an MPI + OpenMP environment. They were developed as part of my coursework in semester 2 2018. </P>
 
-The primary intent of this repository is to demonstrate use of MPI-I/O and a repeated matrix-dense-vector multiplication method (to solve for (A^n).u = v where A is a sparse matrix, n, is an integer and u,v are dense vectors) appropriate for a scenario where MPI communication between networked computational nodes is a primary cost factor. This uses subroutines Spinifex_Import_Vector, Spinifex_Sparse_Read_and_Distribute and Spinifex_Sparse_SpMV. These are, unsurprisingly, contained within Spinifex.f90.
+The primary intent of this repository is to demonstrate use of MPI-I/O and a repeated matrix-dense-vector multiplication method to calculate <b>A</b><sup>n</sup>).<b>u</b> = <b>v</b>, where <b>A</b> is a sparse matrix, n is an integer and <b>u</b>,<b>v</b> are dense vectors. The approach used is appropriate for a scenario where MPI communication between networked computational nodes is a primary cost factor. The subroutines of interest are Spinifex_Import_Vector, Spinifex_Sparse_Read_and_Distribute and Spinifex_Sparse_SpMV. These are, unsurprisingly, contained within Spinifex.f90 with the process briefly detail by the code comments.
 
 # Build Instructions #
 
