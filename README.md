@@ -9,6 +9,6 @@ The primary intent of this repository is to demonstrate use of MPI-I/O and a rep
 
 # Build Instructions #
 
-Currently these modules require a Fortran compiler which has implemented support for parameterized types (part of the Fortran 2008 standard). This Intel Fortran compiler fits this criteria. </P>
+Currently these modules require a Fortran compiler which has implemented support for parameterized types (part of the Fortran 2008 standard). The Intel Fortran compiler fits this criteria. </P>
 
 The included makefile compiles Example.f90. To run simply type mpiexec -n <number of nodes> ./Example FMO.bin statevector.bin <output>.
